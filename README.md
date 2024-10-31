@@ -31,5 +31,8 @@ The Electronic Devices Application allows users to manage a list of electronic d
    - Battery Life
    - Has Stylus (Checkbox)
 
-
+![Screenshot 2024-10-31 162240](https://github.com/user-attachments/assets/b1388180-197f-41c0-8780-9c0dad641fbc)
+![Screenshot 2024-10-31 162438](https://github.com/user-attachments/assets/ba7f915f-1e43-458c-b000-3110c002e769)
+![Screenshot 2024-10-31 162525](https://github.com/user-attachments/assets/0ea6350d-e32f-46f2-9cc1-ed0d206a25e0)
+![Screenshot 2024-10-31 162539](https://github.com/user-attachments/assets/ed78456b-4c18-4c45-9f5d-0764e3007b06)
 

@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.electronicdevices.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.electronicdevices.HelloController">
+    <children>
+        <RadioButton fx:id="smartphoneRadio" layoutX="20" layoutY="50" text="Smartphone"/>
+        <RadioButton fx:id="laptopRadio" layoutX="20" layoutY="80" text="Laptop"/>
+        <RadioButton fx:id="tabletRadio" layoutX="20" layoutY="110" text="Tablet"/>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+        <Label layoutX="20" layoutY="140" text="Name"/>
+        <TextField fx:id="nameField" layoutX="100" layoutY="140" promptText="Name"/>
+
+        <Label layoutX="20" layoutY="170" text="Price"/>
+        <TextField fx:id="priceField" layoutX="100" layoutY="170" promptText="Price"/>
+
+        <Label layoutX="20" layoutY="200" text="Weight"/>
+        <TextField fx:id="weightField" layoutX="100" layoutY="200" promptText="Weight"/>
+
+        <Label layoutX="20" layoutY="230" text="Screen Size"/>
+        <TextField fx:id="screenSizeField" layoutX="100" layoutY="230" promptText="Screen Size"/>
+
+        <Label layoutX="20" layoutY="260" text="Camera Res"/>
+        <TextField fx:id="cameraResolutionField" layoutX="100" layoutY="260" promptText="Camera Resolution"/>
+
+        <Label layoutX="20" layoutY="290" text="RAM Size"/>
+        <TextField fx:id="ramSizeField" layoutX="100" layoutY="290" promptText="RAM Size"/>
+
+        <Label layoutX="20" layoutY="320" text="Processor Type"/>
+        <TextField fx:id="processorTypeField" layoutX="100" layoutY="320" promptText="Processor Type"/>
+
+        <Label layoutX="20" layoutY="350" text="Battery Life"/>
+        <TextField fx:id="batteryLifeField" layoutX="100" layoutY="350" promptText="Battery Life"/>
+
+        <Label layoutX="20" layoutY="380" text="Has Stylus"/>
+        <CheckBox fx:id="hasStylusCheckBox" layoutX="100" layoutY="380"/>
+
+        <Button fx:id="addButton" layoutX="20" layoutY="420" text="Add" onAction="#handleAdd"/>
+        <Button fx:id="removeButton" layoutX="100" layoutY="420" text="Remove" onAction="#handleRemove"/>
+
+        <ListView fx:id="deviceListView" layoutX="295" layoutY="42" prefWidth="200" prefHeight="350"/>
+    </children>
+</AnchorPane>
